@@ -1,39 +1,16 @@
-
-
-$deepBerry: #651c32;
-$deepBerryLight: #743347;
-$deepBerryLighter: #84495b;
-$deepBerryLightest: #936070;
-
-$matisse: #1d4f91;
-$apricot: #f1cfb6;
-$rose: #b57981;
-$pearl: #ebece7;
-$echoBlue: #a1b6cf;
-$gold: #d5c39d;
-
-$black: #222;
+$black: #000;
 $white: #fff;
 
+$colorOne: #3553a5;
+$colorTwo: #d5322a;
+$colorThree: #2884bd;
 
-
-$shortbread: #F1DAC0;
-$rose: #F6D7DA;
-$crimson: #C80816;
-$forestGreen: #28503F;
-$mulberry: #751B30;
-$sapphire: #3983B3;
-$honey: #DCB034;
-$chiffon: #E6DCDD;
+// The Neutral
+$colorFour: #efebdf; 
 
 
 
+@import url("https://use.typekit.net/dmk1wil.css");
 
-
-@import url("https://use.typekit.net/ndx3jwv.css");
-
-
-
-$mainFont: orpheuspro, serif;
-$secondaryFont: futura-pt, sans-serif;
-$bodyFont: capitolium-2, serif;
+$mainFont: soleil, sans-serif;
+$bodyFont: coranto-2, serif;

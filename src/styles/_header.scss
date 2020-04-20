@@ -3,7 +3,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: $pearl;
+  background: $colorFour;
   z-index: 9999;
 
   .wrapper {
@@ -18,7 +18,7 @@ header {
       }
 
       .logo {
-        width: 150px;
+        width: 250px;
         img {
           width: 100%;
         }
@@ -29,15 +29,15 @@ header {
     margin: 40px 0;
 
     .concept-links {
-      font-family: $secondaryFont;
+      font-family: $mainFont;
       text-transform: uppercase;
       margin-right: 15px;
       letter-spacing: 2px;
-      font-size: 14px;
+      font-size: 0.8rem;
       font-weight: 600;
 
       &:hover, &:active {
-        color: $matisse;
+        color: $colorThree;
       }
     }
 
