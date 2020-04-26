@@ -12,7 +12,7 @@ import site from '../images/concepts/two/site.png';
 import letterhead from '../images/concepts/two/letterhead.png';
 
 
-function ConceptOne() {
+function ConceptTwo() {
   return (
     <div className="concept-one">
       <h3>Concept Two</h3>
@@ -33,4 +33,4 @@ function ConceptOne() {
   );
 }
 
-export default ConceptOne;
+export default ConceptTwo;
