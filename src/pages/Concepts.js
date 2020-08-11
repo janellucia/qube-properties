@@ -42,7 +42,7 @@ function Concepts() {
           <Route path="/misc" exact component={Misc} />
 
         </Switch>
-        <Redirect exact from="/" to="/values" />
+        {/* <Redirect exact from="/" to="/values" /> */}
       </div>
     </Router>
   );
