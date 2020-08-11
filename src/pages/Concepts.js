@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-ro
 // import { slide as Menu } from "react-burger-menu";
 
 import Values from './Values.js'
-import ConceptOne from './ConceptOne.js'
-import ConceptTwo from './ConceptTwo.js'
-import ConceptThree from './ConceptThree.js'
+import Moodboard from './Moodboard.js'
+import Logos from './Logos.js'
+import Misc from './Misc.js'
+
 
 import logo from '../images/logo.png';
 import Menu from "../components/Menu";
@@ -23,10 +24,10 @@ function Concepts() {
         <div className="wrapper">
           <img src={logo} alt="" className="logo" />
           <nav className="concept-link-wrap">
-            <Link to="/concepts/values" className="concept-links">Values</Link>
-            <Link to="/concepts/concept-one" className="concept-links">Concept One</Link>
-            <Link to="/concepts/concept-two" className="concept-links">Concept Two</Link>
-            <Link to="/concepts/concept-three" className="concept-links">Concept Three</Link>
+            <Link to="/values" className="concept-links">Values</Link>
+            <Link to="/moodboard" className="concept-links">Colour & Typography</Link>
+            <Link to="/logos" className="concept-links">Logos</Link>
+            <Link to="/misc" className="concept-links">Misc</Link>
           </nav>
           <div className="mobile-menu">
             <Menu pageWrapId={"main"} outerContainerId={"Root"} />
@@ -34,21 +35,14 @@ function Concepts() {
         </div>
       </header>
       <div className="wrapper">
-        <div className="intro">
-          <h1>Qube Properties Branding <br></br>Phase One: Colours, Typography & Logo</h1>
-          <h2>In this phase we are looking exculsively at colours, typography and the logo. <br></br>All other elements shown are for you to see an example of how each concept could look action.</h2>
-          <div className="credits">
-            <p>Qube Properties Branding</p>
-            <p>April 2020</p>
-          </div>
-        </div>
         <Switch>
-          <Route path="/concepts/Values" exact component={Values} />
-          <Route path="/concepts/concept-one" component={ConceptOne} />
-          <Route path="/concepts/concept-two" component={ConceptTwo} />
-          <Route path="/concepts/concept-three" component={ConceptThree} />
+          <Route path="/values" exact component={Values} />
+          <Route path="/moodboard" exact component={Moodboard} />
+          <Route path="/logos" exact component={Logos} />
+          <Route path="/misc" exact component={Misc} />
+
         </Switch>
-        {/* <Redirect exact from="/" to="/concepts/Values" /> */}
+        <Redirect exact from="/" to="/values" />
       </div>
     </Router>
   );
